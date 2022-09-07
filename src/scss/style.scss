@@ -1,0 +1,140 @@
+$dark-overlay: rgba(0,0,0,0.7);
+$font-size: 50px;
+.navbar{
+  background: #000;
+  .nav-link{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+}
+.carousel-item{
+  height: 450px;
+}
+.carousel-img-1{
+  background: url('../img/image1.jpeg');
+  background-size: cover;
+
+
+}
+.carousel-img-2{
+  background: url('../img/image2.jpeg');
+  background-size: cover;
+}
+.carousel-img-3{
+  background: url('../img/image3.jpeg');
+  background-size: cover;
+}
+#home-icon{
+  .fa{
+    font-size: $font-size;
+  }
+}
+#getstarted{
+  position: relative;
+  background: url('../img/bg1.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  .dark-overlay{
+    background: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#home-video{
+  position: relative;
+  background: url('../img/people.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  .dark-overlay{
+    background: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .fa{
+      font-size: $font-size;
+      color: #ff0000;
+    }
+  }
+}
+#gallery{
+  img{
+    min-height: 250px;
+  }
+}
+#copyright{
+  background: #000;
+}
+#about-header{
+  background: url('../img/image1.jpeg');
+  background-size: cover;
+  height: 200px;
+  background-attachment: fixed;
+}
+#about-do-section{
+  img{
+    height: 350px;
+    width: 350px;
+  }
+}
+#icon-boxes{
+  .fa{
+    font-size: $font-size;
+  }
+  h3{
+    margin-top: 20px;
+  }
+}
+#testimonial{
+  .slick-prev::before,.slick-next::before{
+    color: #000;
+  }
+}
+#services-header{
+  background: url('../img/image3.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200px;
+}
+#blog-header{
+  background: url('../img/image3.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200px;
+}
+#contact-header{
+  background: url('../img/image3.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200px;
+}
+@media(max-width:767px){
+.nav-item{
+    padding-left: 0 !important;
+}
+
+  #getstarted{
+    min-height: 300px;
+  }
+
+}
+@media(max-width:480px){
+  .carousel{
+    h2{
+      font-size: 2.5rem;
+    }
+  }
+  #getstarted{
+    min-height: 400px;
+  }
+}
